@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div id="finfo"></div>
+<div id="ninfo"></div>
+<div id="dinfo"></div>
+<div id="minfo"></div>
+
+<video autoplay></video>
+
+
+<style type="text/css">
+
+	*{
+		font-family: helvetica;
+	}
+
+	#finfo{
+		top: 10;
+	}
+
+	#ninfo{
+		top: 200px;
+	}
+
+	#dinfo{
+		top: 400px;
+	}
+
+	#minfo{
+		top: 600px;
+	}
+
+	#finfo, #ninfo, #dinfo, #minfo{
+		position: absolute;
+		height: 100px;
+		width: 200px;
+		background-color: #ff0000;
+		z-index: 10;
+		color: #fff;
+		padding: 10px;
+		opacity: .7;
+	}
+
+	.canvas{
+		z-index: 0;
+		position: absolute;
+		top: 0;
+	}
+</style>
+
+<div class="canvas" id="canvas"></div>
+
+</body>
+</html>
+
+<script src="js/mobilecheck.js"></script>
+<script type="module" src="js/index.js"></script>
